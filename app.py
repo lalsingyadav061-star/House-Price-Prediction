@@ -27,7 +27,7 @@ for i in final_X:
   all_value.append(result)
 
 
-user_x = scaler.transform([all_values})
+user_x = scaler.transform([all_values])
 
 @st.cache_data
 def ml_model(x,y):
@@ -46,6 +46,7 @@ with st.spinner('Predicting House Price'):
 
 st.success(f'Estimated House Price is: $ {final_price}'}
 st.markdown('''**Design and Developed by: Sandhya yadav**''')           
+
 
 
 
